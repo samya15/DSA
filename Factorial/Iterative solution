@@ -1,0 +1,18 @@
+#include<stdio.h>
+//Iterative solution
+int Factorial(int num)
+{
+    int pro=1, i;
+    for(i=num; i>=2; i--)
+    {
+        pro=pro*i;
+    }
+    return pro;
+}
+int main()
+{
+    printf("%d",Factorial(5));
+    return 0;
+}
+//Loop runs n-1 times. Time complexity is Theta(n).
+//Auxiliary Space: It's not creating an array or any other data structure of size n. It is simply using constant access space. Therefore, the auxiliary space requirement for this solution is begoe(?) of 1.
