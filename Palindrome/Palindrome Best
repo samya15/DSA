@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include <stdbool.h>
+bool isPal(int n)
+{
+    int sum=0;
+    int temp=n;//so that value of n at the end remains intact for comparison.
+    while(temp!=0)
+    {
+      int rem=temp%10;
+      sum=sum*10+rem;
+      temp=temp/10;
+    }
+    return (n==sum);
+}
+int main()
+{
+    printf("%d",isPal(343));
+    return 0;
+}
