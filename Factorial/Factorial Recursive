@@ -1,0 +1,18 @@
+#include<stdio.h>
+int prod=1;
+int func(int n)
+{
+    if(n<2)
+        return prod;
+    else
+        {
+            prod=prod*n;
+            n--;
+            func(n);
+        }
+}
+int main()
+{
+    printf("%d",func(5));
+    return 0;
+}
